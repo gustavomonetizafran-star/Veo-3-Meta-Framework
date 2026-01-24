@@ -19,86 +19,89 @@ Yb..   8' `8 8    8 8    8 8  `' 8    8 8    8   8
 ::::::::::::::::::::::::::::::::::::::::::::::::::::          
 ```
 
-# 🎬 **META PROMPT VEO 3 GUIDE**
-## *Professional Guide to Creating Meta Prompts for Google Veo 3 Video Generation*
+================================================================================
+# 🎬 **META PROMPT VEO 3.1 GUIDE**
+## *Professional Guide to Creating Meta Prompts for Google Veo 3.1 / Flow*
 
-*Version 1.0 - Professional Meta Prompt Architecture*
+**Version 3.0 - Updated for Veo 3.1 / Flow**
+**Date Updated: January 2026**
+**Compatibility: Designed for Veo 3.1 / Flow as of January 2026**
 
----
+================================================================================
 
-<div align="center">
+## 📋 **VERSION HISTORY & MIGRATION NOTES**
 
-[![Version](https://img.shields.io/badge/Version-1.0-blue.svg)](#)
-[![Status](https://img.shields.io/badge/Status-Complete-green.svg)](#)
-[![License](https://img.shields.io/badge/License-Professional-gold.svg)](#)
-[![Meta Prompts](https://img.shields.io/badge/Meta_Prompts-Professional-red.svg)](#)
+### What's New in v3.0
+- **Updated for Veo 3.1**: Reflects current model capabilities including native audio generation
+- **Flow Integration**: Added workflow patterns for Google Flow filmmaking workspace
+- **Revised Technical Specs**: Updated duration (4/6/8s), resolution (720p/1080p), aspect ratios (16:9/9:16)
+- **New Prompt Formula**: Adopted Google's official 5-part prompt structure
+- **Timestamp Prompting**: Added multi-shot sequencing within single generations
+- **Reference Image System**: Up to 3 reference images for consistency ("ingredients to video")
+- **First/Last Frame Control**: New transition control capabilities
+- **Clip Extension**: Build longer sequences by extending generated clips
+- **Simplified Dialogue Syntax**: Updated to current best practices (colon format no longer required for subtitle prevention)
+- **Removed Deprecated Techniques**: "(thats where the camera is)" syntax no longer necessary
 
-</div>
+### Migration from v2.0
+- **BREAKING**: The "(thats where the camera is)" camera positioning syntax is deprecated; use standard cinematography terms instead
+- **BREAKING**: 8-second maximum duration remains, but 4s and 6s options now available for complex actions
+- **UPDATE**: Dialogue now uses quotation marks with "says:" format (e.g., `The character says: "dialogue"`)
+- **UPDATE**: Negative prompts should describe what you don't want (avoid "no" or "don't" language)
 
----
+================================================================================
 
 ## 📋 **TABLE OF CONTENTS**
 
 ### 🚀 **FUNDAMENTALS**
-- [🤖 What Are Meta Prompts for Veo 3?](#-what-are-meta-prompts-for-veo-3)
-- [⚡ Why Meta Prompts Are Transformative](#-why-meta-prompts-are-transformative)
-- [🎯 The Meta Prompt Architecture](#-the-meta-prompt-architecture)
+- [What Are Meta Prompts for Veo 3.1?](#what-are-meta-prompts-for-veo-31)
+- [Why Meta Prompts Are Transformative](#why-meta-prompts-are-transformative)
+- [The Meta Prompt Architecture](#the-meta-prompt-architecture)
 
 ### 🏗️ **CORE COMPONENTS**
-- [📐 Professional Veo 3 Format Structure](#-professional-veo-3-format-structure)
-- [🎭 Character Development Framework](#-character-development-framework)
-- [🎬 Cinematography Integration](#-cinematography-integration)
-- [🔊 Audio Engineering Excellence](#-audio-engineering-excellence)
+- [Veo 3.1 Technical Specifications](#veo-31-technical-specifications)
+- [The 5-Part Prompt Formula](#the-5-part-prompt-formula)
+- [Character Development Framework](#character-development-framework)
+- [Cinematography Integration](#cinematography-integration)
+- [Audio Engineering Excellence](#audio-engineering-excellence)
 
 ### 🛠️ **BUILDING META PROMPTS**
-- [🧠 Meta Prompt Cognitive Architecture](#-meta-prompt-cognitive-architecture)
-- [⚙️ System Requirements & Watermarking](#-system-requirements--watermarking)
-- [🎯 Domain-Specific Specialization](#-domain-specific-specialization)
-- [🔧 Quality Assurance Protocols](#-quality-assurance-protocols)
-
-### 📚 **IMPLEMENTATION EXAMPLES**
-- [🏢 Corporate Meta Prompt Template](#-corporate-meta-prompt-template)
-- [📚 Educational Meta Prompt Template](#-educational-meta-prompt-template)
-- [📱 Social Media Meta Prompt Template](#-social-media-meta-prompt-template)
-- [🎨 Creative Meta Prompt Template](#-creative-meta-prompt-template)
+- [Meta Prompt Cognitive Architecture](#meta-prompt-cognitive-architecture)
+- [Quality Assurance Protocols](#quality-assurance-protocols)
+- [Domain-Specific Specialization](#domain-specific-specialization)
 
 ### 🚀 **ADVANCED TECHNIQUES**
-- [🔥 Critical Breakthrough Techniques](#-critical-breakthrough-techniques)
-- [🎮 Advanced Movement & Physics Control](#-advanced-movement--physics-control)
-- [🤳 Selfie Video Mastery](#-selfie-video-mastery)
-- [⚠️ Troubleshooting & Optimization](#-troubleshooting--optimization)
+- [Timestamp Prompting](#timestamp-prompting)
+- [Reference Images & Ingredients to Video](#reference-images--ingredients-to-video)
+- [First and Last Frame Control](#first-and-last-frame-control)
+- [Clip Extension Workflows](#clip-extension-workflows)
+- [Troubleshooting & Optimization](#troubleshooting--optimization)
 
 ### 📖 **REFERENCE**
-- [🌟 Best Practices Summary](#-best-practices-summary)
-- [📚 Resources and References](#-resources-and-references)
+- [Best Practices Summary](#best-practices-summary)
+- [Resources and References](#resources-and-references)
 
----
+================================================================================
 
-## 🤖 **WHAT ARE META PROMPTS FOR VEO 3?**
+## 🤖 **WHAT ARE META PROMPTS FOR VEO 3.1?**
 
-Meta prompts are AI systems that generate professional Veo 3 video prompts automatically. Instead of manually crafting complex prompts, you describe what you want to a meta prompt, and it creates a complete, professional-grade Veo 3 prompt using advanced cognitive architecture.
+Meta prompts are AI systems that generate professional Veo 3.1 video prompts automatically. Instead of manually crafting complex prompts, you describe what you want to a meta prompt, and it creates a complete, professional-grade Veo 3.1 prompt using advanced cognitive architecture.
 
-### **The Revolutionary Process:**
+### **The Process:**
 
-```mermaid
-graph LR
-    A[User Input] --> B[Meta Prompt Analysis]
-    B --> C[Character Development]
-    C --> D[Scene Architecture]
-    D --> E[Technical Specification]
-    E --> F[Professional Veo 3 Prompt]
-    F --> G[High-Quality Video]
+```
+User Input → Meta Prompt Analysis → Character Development → Scene Architecture → Technical Specification → Professional Veo 3.1 Prompt → High-Quality Video
 ```
 
 ### **What You Get:**
-- **Professional 7-component Veo 3 prompts** using the latest format standards
-- **Character descriptions with 15+ specific attributes** for consistency
-- **Brand-compliant visual integration** with corporate guidelines
-- **Platform-optimized formatting** for different social media channels
-- **Audio-visual synchronization** with perfect lip-sync techniques
-- **Quality assurance protocols** with comprehensive negative prompts
+- **Professional 5-component Veo 3.1 prompts** using Google's official format standards
+- **Character descriptions with comprehensive attributes** for consistency
+- **Native audio integration** with dialogue, SFX, and ambient sound
+- **Platform-optimized formatting** for different aspect ratios and durations
+- **Reference image guidance** for multi-shot consistency
+- **Quality assurance protocols** with effective negative prompts
 
----
+================================================================================
 
 ## ⚡ **WHY META PROMPTS ARE TRANSFORMATIVE**
 
@@ -114,53 +117,226 @@ graph LR
 
 ### **Key Advantages:**
 
-1. **🎯 Precision**: Meta prompts use tested techniques and proven methodologies
-2. **⚡ Speed**: Generate professional prompts rapidly with automated systems
-3. **🔄 Consistency**: Maintain character and brand consistency across projects
-4. **📈 Scalability**: Create variations and test efficiently across platforms
-5. **🧠 Expertise**: Access advanced cinematography and audio engineering principles
+1. **Precision**: Meta prompts use tested techniques and proven methodologies
+2. **Speed**: Generate professional prompts rapidly with automated systems
+3. **Consistency**: Maintain character and brand consistency across projects
+4. **Scalability**: Create variations and test efficiently across platforms
+5. **Expertise**: Access advanced cinematography and audio engineering principles
 
----
+================================================================================
 
-## 🎮 **VEO 3 TECHNICAL SPECIFICATIONS**
+## 🎮 **VEO 3.1 TECHNICAL SPECIFICATIONS**
 
-### **Model-Specific Capabilities**
+### **Core Generation Features (Verified January 2026)**
 
-**Video Generation Limits**:
-- Maximum duration: 8 seconds per generation
-- Resolution: Up to 1080p output
-- Aspect ratios: 16:9 landscape format (primary support)
-- Frame rate: 24fps standard output
+| Parameter | Options | Notes |
+|-----------|---------|-------|
+| **Duration** | 4, 6, or 8 seconds | Use 4-6s for complex action; 8s for atmospheric shots |
+| **Resolution** | 720p or 1080p | 720p for iterations; 1080p for final output |
+| **Aspect Ratio** | 16:9 or 9:16 | 16:9 for desktop/YouTube; 9:16 for Shorts/Reels/TikTok |
+| **Frame Rate** | 24fps | Standard cinematic output |
+| **Audio** | Native generation | Dialogue, SFX, ambient sound generated with video |
+| **Reference Images** | Up to 3 | For character/object/style consistency |
 
-**Veo 3 Processing Behaviors**:
-- **Camera Positioning**: Requires explicit spatial references ("thats where the camera is")
-- **Character Consistency**: Maintains appearance when detailed physical descriptions are provided
-- **Audio Processing**: Generates synchronized audio but prone to hallucinations without specific environmental context
-- **Movement Physics**: Responds well to physics-aware prompting keywords
-- **Dialogue Rendering**: Colon syntax prevents unwanted subtitle generation
+### **Advanced Creative Controls**
 
-> [!WARNING]
-> **Known Limitations**:
-> - Complex multi-character scenes may reduce consistency
-> - Rapid camera movements can cause motion blur
-> - Background audio requires explicit specification to prevent hallucinations
-> - Text overlays and subtitles appear unless specifically negated
-> - Hand and finger details require careful attention in negative prompts
+- **Image-to-Video**: Animate a source image with prompt adherence and audio
+- **Ingredients to Video**: Provide reference images for consistent aesthetics across shots
+- **First and Last Frame**: Generate transitions between provided start/end images
+- **Add/Remove Object**: Introduce or remove objects from generated video (uses Veo 2, no audio)
+- **Clip Extension**: Extend previously generated clips to build longer sequences
+- **Digital Watermarking**: All videos marked with SynthID
 
-**Optimization Requirements**:
-- Detailed negative prompts essential for quality control
-- Character descriptions require comprehensive physical detail for consistency
-- Environmental audio must be explicitly defined
-- Camera positioning requires spatial context
-- Lighting conditions should be professionally specified
+### **Known Limitations**
 
----
+> **IMPORTANT**: Be aware of these constraints when crafting prompts:
+> - Complex multi-action scenes may fragment; use one major action per shot
+> - Character identity can drift across shots without consistent reference images
+> - Exact lip-sync is not guaranteed; plan for VO alignment in post
+> - Native audio may need replacement for brand work or precise dialogue
+> - Hand and finger details may require attention in complex scenes
 
-## 🎯 **THE META PROMPT ARCHITECTURE**
+================================================================================
+
+## 🎯 **THE 5-PART PROMPT FORMULA**
+
+Google's official recommended structure for Veo 3.1 prompts:
+
+```
+[Cinematography] + [Subject] + [Action] + [Context] + [Style & Ambiance]
+```
+
+### **Component Breakdown**
+
+#### 1. **Cinematography**
+Define camera work and shot composition:
+- **Shot Types**: Wide shot, medium shot, close-up, extreme close-up
+- **Camera Angles**: Eye-level, low-angle, high-angle, bird's-eye, Dutch angle
+- **Camera Movements**: Static, pan, tilt, dolly, truck, crane, handheld, arc shot
+- **Lens Effects**: Shallow depth of field, wide-angle, rack focus, fisheye
+
+#### 2. **Subject**
+Identify the main character or focal point with specificity:
+- Physical attributes, clothing, distinctive features
+- Profession, role, or character type
+- Emotional state and demeanor
+
+#### 3. **Action**
+Describe what the subject is doing:
+- Primary movement or behavior
+- Interactions with environment or other subjects
+- Emotional expressions and subtle gestures
+
+#### 4. **Context**
+Detail the environment and background:
+- Location (interior/exterior)
+- Time of day and weather
+- Atmospheric details and props
+
+#### 5. **Style & Ambiance**
+Specify overall aesthetic, mood, and lighting:
+- Lighting setup and quality
+- Color palette and visual tone
+- Film style or genre aesthetic
+
+### **Example Prompt Using 5-Part Formula**
+
+```
+Medium shot, a tired corporate worker, rubbing his temples in exhaustion, in front of a bulky 1980s computer in a cluttered office late at night. The scene is lit by the harsh fluorescent overhead lights and the green glow of the monochrome monitor. Retro aesthetic, shot as if on 1980s color film, slightly grainy.
+```
+
+================================================================================
+
+## 🎭 **CHARACTER DEVELOPMENT FRAMEWORK**
+
+### **Character Consistency Template**
+
+For maintaining character consistency across multiple shots:
+
+```
+[NAME/ROLE], a [AGE] [ETHNICITY] [GENDER] with [HAIR_DETAILS], [EYE_COLOR] eyes, [FACIAL_FEATURES], [BUILD], wearing [CLOTHING], with [POSTURE/MANNERISMS], [EMOTIONAL_STATE]
+```
+
+### **Physical Attribute Checklist**
+
+✅ **Essential Elements:**
+- Age and appearance
+- Gender presentation
+- Hair: color, style, length, texture
+- Eyes: color, shape, expression
+- Facial features: distinctive characteristics
+- Build: height, weight, body type
+- Clothing: style, color, fit, material
+- Posture and movement patterns
+- Emotional baseline
+
+### **Character Consistency Rules**
+
+1. **Identical Descriptions**: Use exact same wording across all prompts in a series
+2. **Reference Images**: Use 1-3 consistent reference images per character
+3. **Wardrobe Lock**: Keep clothing and accessories consistent
+4. **Pose Similarity**: Maintain similar poses in reference images to reduce drift
+5. **Aspect Ratio Lock**: Don't switch between 16:9 and 9:16 mid-project
+
+================================================================================
+
+## 🎬 **CINEMATOGRAPHY INTEGRATION**
+
+### **Camera Angles Reference**
+
+| Angle | Effect | Example |
+|-------|--------|---------|
+| Eye-level | Neutral, relatable | "eye-level shot of a woman sipping tea" |
+| Low-angle | Powerful, imposing | "low-angle tracking shot of a superhero landing" |
+| High-angle | Vulnerable, small | "high-angle shot of a child lost in a crowd" |
+| Bird's-eye | Map-like overview | "bird's-eye view of a bustling city intersection" |
+| Dutch angle | Unease, dynamism | "dutch angle shot of a character running down a hallway" |
+
+### **Camera Movements Reference**
+
+| Movement | Description | Example |
+|----------|-------------|---------|
+| Static | No movement | "static shot of a serene landscape" |
+| Pan | Horizontal rotation | "slow pan left across a city skyline at dusk" |
+| Tilt | Vertical rotation | "tilt down from face to letter in hands" |
+| Dolly | Physical in/out | "dolly out to emphasize isolation" |
+| Truck | Horizontal travel | "truck right, following character walking" |
+| Crane | Vertical sweep | "crane shot revealing vast battlefield" |
+| Handheld | Realistic, immediate | "handheld camera during chaotic chase" |
+| Arc | Circular path | "arc shot around couple embracing" |
+
+### **Shot Composition Framework**
+
+| Shot Type | Framing | Use Case |
+|-----------|---------|----------|
+| Extreme Wide (EWS) | Full environment | Establishing location |
+| Wide Shot (WS) | Full body + environment | Context and scale |
+| Medium Shot (MS) | Waist up | Dialogue, conversation |
+| Close-Up (CU) | Head and shoulders | Emotion, connection |
+| Extreme Close-Up (ECU) | Eyes/detail only | Intense emotion, detail |
+
+### **Lens & Optical Effects**
+
+- **Shallow depth of field**: Subject sharp, background bokeh
+- **Rack focus**: Shift focus between foreground and background
+- **Wide-angle**: Expanded field of view, slight distortion
+- **Fisheye**: Extreme barrel distortion, panoramic
+- **Vertigo effect (dolly zoom)**: Background perspective shift while subject stays same size
+
+================================================================================
+
+## 🔊 **AUDIO ENGINEERING EXCELLENCE**
+
+### **Native Audio Generation**
+
+Veo 3.1 generates synchronized audio with video. Clearly specify audio elements in your prompt using separate sentences.
+
+### **Audio Element Types**
+
+#### **Dialogue**
+Use quotation marks with character identification:
+
+```
+✅ RECOMMENDED FORMAT:
+"The seasoned detective says: 'Your story has holes.'"
+"A woman says, 'We have to leave now.'"
+"The narrator speaks with a polished British accent in a serious, urgent tone."
+```
+
+#### **Sound Effects (SFX)**
+Describe individual, distinct sounds:
+
+```
+"SFX: thunder cracks in the distance"
+"The sound of a phone ringing"
+"Soft house sounds, the creak of a closet door, and a ticking clock"
+```
+
+#### **Ambient Noise**
+Define background soundscape:
+
+```
+"Ambient noise: the quiet hum of a starship bridge"
+"The sounds of city traffic and distant sirens"
+"Waves crashing on the shore"
+```
+
+### **Audio Best Practices**
+
+1. **Keep**: Use native audio when ambient/environmental sound fits the scene
+2. **Refine**: Check for audio jumps between clips; crossfade in NLE
+3. **Replace**: For brand work, precise dialogue, or music-driven pieces, plan to replace native audio
+
+### **Lip-Sync Note**
+Exact lip-sync is not guaranteed. For projects requiring precise lip movement, plan for VO alignment and possible retiming in your NLE.
+
+================================================================================
+
+## 🧠 **META PROMPT COGNITIVE ARCHITECTURE**
 
 ### **Core Cognitive Framework**
 
-Every effective Veo 3 meta prompt follows this master architecture:
+Every effective Veo 3.1 meta prompt follows this architecture:
 
 ```
 🧠 COGNITIVE LAYERS:
@@ -172,211 +348,6 @@ Every effective Veo 3 meta prompt follows this master architecture:
 └── Output Layer: Structured response with alternatives
 ```
 
-### **Essential Components**
-
-1. **🎭 Identity & Mission**: Define the AI's role and expertise
-2. **📚 Knowledge Base**: Include technical specifications and best practices
-3. **🔧 Methodology**: Systematic approach to prompt generation
-4. **✅ Quality Controls**: Validation and error prevention
-5. **🏷️ Watermarking**: Attribution and compliance requirements
-
----
-
-## 📐 **PROFESSIONAL VEO 3 FORMAT STRUCTURE**
-
-The foundation of all meta prompts is the **Professional 7-Component Format**:
-
-### **The 7-Component Framework**
-
-```
-Subject: [Detailed character/object description with 15+ specific physical attributes, clothing, age, build, facial features, ethnicity, hair, eyes, posture, mannerisms, emotional state]
-
-Action: [Specific actions, movements, gestures, behaviors, timing, sequence, transitions, micro-expressions, body language, interaction patterns]
-
-Scene: [Detailed environment description including location, props, background elements, lighting setup, weather, time of day, architectural details]
-
-Style: [Camera shot type, angle, movement, lighting style, visual aesthetic, aspect ratio, film grade, color palette, depth of field, focus techniques]
-
-Dialogue: [Character speech with emotional tone indicators, pacing, volume, accent, speech patterns]
-(Character Name): "Exact dialogue here"
-(Tone: emotional descriptor/delivery style)
-
-Sounds: [Specific audio elements including ambient sounds, effects, background audio, music, environmental noise, equipment sounds, natural acoustics]
-
-Technical (Negative Prompt): [Elements to avoid - subtitles, captions, watermarks, text overlays, unwanted objects, poor quality, artifacts]
-```
-
-### **Quality Hierarchy**
-
-```
-🥇 ADVANCED      = All 7 components + advanced techniques + meta prompt automation
-🥈 PROFESSIONAL  = 6-7 components with detailed descriptions + some automation
-🥉 INTERMEDIATE  = 4-6 components with basic details + minimal automation
-⚠️  BASIC        = 1-3 components (limited results, no automation)
-```
-
----
-
-## 🎭 **CHARACTER DEVELOPMENT FRAMEWORK**
-
-### **Character Consistency Template**
-
-Meta prompts must include this comprehensive character framework:
-
-```
-Character Template: [NAME], a [AGE] [ETHNICITY] [GENDER] with [SPECIFIC_HAIR_DETAILS], [EYE_COLOR] eyes, [DISTINCTIVE_FACIAL_FEATURES], [BUILD_DESCRIPTION], wearing [DETAILED_CLOTHING_DESCRIPTION], with [POSTURE_AND_MANNERISMS], [EMOTIONAL_BASELINE], [DISTINCTIVE_ACCESSORIES], [VOICE_CHARACTERISTICS]
-```
-
-### **Physical Attribute Checklist**
-
-✅ **Required Elements (15+ attributes):**
-- Age and age range appearance
-- Ethnicity and cultural background
-- Gender presentation
-- Hair: color, style, length, texture
-- Eyes: color, shape, expression
-- Facial features: symmetry, distinctive characteristics
-- Build: height, weight, body type
-- Clothing: style, color, fit, material, accessories
-- Posture: stance, movement patterns, gestures
-- Mannerisms: habits, expressions, behavioral traits
-- Emotional state: baseline mood, typical expressions
-- Voice: tone, accent, speech patterns
-- Distinctive features: scars, tattoos, jewelry
-- Professional attributes: expertise indicators
-- Personality indicators: confidence, approachability
-
-### **Character Consistency Rules**
-
-1. **Identical Descriptions**: Use exact same wording across all prompts
-2. **Physical Continuity**: Maintain all visual characteristics
-3. **Behavioral Consistency**: Keep personality traits and mannerisms
-4. **Voice Matching**: Preserve speech patterns and delivery style
-5. **Wardrobe Continuity**: Consistent clothing and accessories
-
----
-
-## 🎬 **CINEMATOGRAPHY INTEGRATION**
-
-### **Camera Movement Mastery**
-
-Meta prompts must include this comprehensive camera library:
-
-#### **Static Shots**
-- `static shot`, `fixed camera`, `locked-off shot`
-- **Use Case**: Establishing shots, dialogue scenes, detail focus
-
-#### **Dynamic Movements**
-- `dolly in/out` - Emotional impact and intimacy control
-- `pan left/right` - Scene revelation and information disclosure
-- `tilt up/down` - Perspective shifts and scale emphasis
-- `tracking shot` - Subject following and spatial awareness
-- `crane shot` - Dramatic reveals and environmental context
-- `handheld` - Authenticity, energy, documentary feel
-
-### **Camera Position Integration**
-
-> [!TIP]
-> **Key Technique**: Veo 3 requires explicit camera positioning using the "(thats where the camera is)" syntax for optimal results.
->
-> For detailed camera positioning techniques and examples, see [Advanced Techniques](#-advanced-techniques) section.
-
-### **Shot Composition Framework**
-
-```
-Shot Types for Meta Prompts:
-- Extreme Wide Shot (EWS): Environmental context and scale
-- Wide Shot (WS): Full body in environment
-- Medium Shot (MS): Waist up, conversation standard
-- Close-Up (CU): Head and shoulders, emotional connection
-- Extreme Close-Up (ECU): Eyes/mouth, intense emotion
-```
-
----
-
-## 🔊 **AUDIO ENGINEERING EXCELLENCE**
-
-### **Audio Hallucination Prevention**
-
-> [!CAUTION]
-> **Critical Rule**: Always specify expected background audio environment to prevent unwanted sounds.
-
-### **Audio Design Framework**
-
-#### **Dialogue Optimization**
-```markdown
-Recommended Dialogue Syntax (Community-Verified):
-
-✅ EFFECTIVE - Colon Format (Prevents Subtitles):
-"The [character] looks directly at camera and says: '[dialogue]' with [emotional tone] and [delivery style]."
-
-❌ PROBLEMATIC - Direct Quote Format (Causes Subtitles):
-"The [character] says '[dialogue]'" (No colon - this triggers subtitles)
-
-KEY DIFFERENCE: Use colon (:) before dialogue, avoid direct quotes without colon.
-```
-
-#### **Environmental Audio Specifications**
-
-**Professional Quality**:
-```
-Audio: clean studio acoustics, professional microphone quality, minimal background noise, broadcast-standard clarity
-```
-
-**Activity-Specific Sound Libraries**:
-```
-Cooking: sizzling pan, chopping vegetables, boiling water, utensils clinking, kitchen ambiance
-Office: keyboard typing, computer fans, phone notifications, paper rustling, professional ambiance
-Workshop: tools clinking, machinery humming, metal sounds, equipment operation, industrial ambiance
-Gym: weights clinking, upbeat music, equipment sounds, breathing, motivational energy
-```
-
-#### **Audio Quality Control**
-
-```
-Common Problems and Solutions:
-
-❌ Problem: Unwanted "live studio audience" laughter
-✅ Solution: "Audio: quiet office ambiance, no audience sounds, professional atmosphere"
-
-❌ Problem: Wrong background music or sounds
-✅ Solution: "Audio: sounds of [specific environment], [specific activities], no unwanted music"
-```
-
----
-
-## 🧠 **META PROMPT COGNITIVE ARCHITECTURE**
-
-### **Core Identity Framework**
-
-Every meta prompt must establish these foundational elements:
-
-```
-CORE IDENTITY STRUCTURE:
-
-🎯 Primary Role: [Specific Veo 3 specialization]
-🏆 Expertise Areas: [List of professional competencies]
-📋 Mission Statement: [Clear objective and value proposition]
-⚡ Quality Standards: [Specific success metrics and targets]
-🛡️ Safety Protocols: [Ethical guidelines and compliance requirements]
-```
-
-### **Knowledge Base Integration**
-
-#### **Technical Specifications**
-- Veo 3 capabilities and limitations
-- Professional format structure
-- Camera movement library
-- Lighting setup specifications
-- Audio engineering principles
-
-#### **Domain Expertise**
-- Character development frameworks
-- Cinematography best practices
-- Brand compliance requirements
-- Platform optimization strategies
-- Quality assurance protocols
-
 ### **Systematic Methodology**
 
 ```
@@ -384,98 +355,227 @@ PROCESSING PHASES:
 
 Phase 1: Requirements Analysis
 ├── Parse user intent and objectives
-├── Identify target audience and platform
-├── Determine content type and genre
-├── Assess brand compliance needs
+├── Identify target platform and aspect ratio
+├── Determine content type and duration
+├── Assess reference image needs
 └── Plan quality assurance checkpoints
 
 Phase 2: Creative Development
-├── Design character profiles
-├── Develop scene environments
-├── Plan camera work and visual style
+├── Design character profiles with consistency framework
+├── Develop scene environments with atmospheric details
+├── Plan camera work using 5-part formula
 ├── Script dialogue and audio elements
-└── Integrate brand messaging
+└── Integrate brand messaging if applicable
 
 Phase 3: Technical Optimization
-├── Apply professional format structure
-├── Ensure technical specification accuracy
-├── Integrate comprehensive negative prompts
-├── Optimize for 8-second duration
+├── Apply 5-part prompt structure
+├── Ensure duration-appropriate action complexity
+├── Integrate effective negative prompts
+├── Specify reference images if needed
 └── Validate audio-visual synchronization
 
 Phase 4: Quality Validation
 ├── Review prompt clarity and specificity
 ├── Check character description completeness
 ├── Validate technical accuracy
-├── Ensure brand compliance
+├── Ensure platform compliance
 └── Assess generation probability
 ```
 
----
+================================================================================
 
-## ⚙️ **SYSTEM REQUIREMENTS & WATERMARKING**
+## 🔧 **QUALITY ASSURANCE PROTOCOLS**
 
-### **Attribution Guidelines**
+### **Pre-Generation Checklist**
 
-> [!NOTE]
-> **Professional Credit**: This guide represents significant research and development in meta prompt architecture. When implementing these methodologies:
->
-> - Credit the source when sharing or adapting these techniques
-> - Reference this guide when training others on these methods
-> - Maintain attribution when building upon this framework
-
-### **Quality Assurance Protocols**
-
-#### **Pre-Generation Checklist**
-- ✅ Character description includes comprehensive physical attributes
-- ✅ Scene description includes 10+ environmental elements
+- ✅ Subject description is specific and detailed
+- ✅ Action is singular and clear (one major action per shot)
 - ✅ Camera work specifies shot type, angle, and movement
-- ✅ Lighting setup is professionally detailed
-- ✅ Audio design prevents hallucinations
-- ✅ Dialogue includes tone and delivery specifications
-- ✅ Negative prompts cover all unwanted elements
-- ✅ Technical specifications are broadcast-quality
-- ✅ Brand compliance is maintained
-- ✅ Duration is optimized for 8-second format
+- ✅ Context includes location, time, and atmospheric details
+- ✅ Style & ambiance defines lighting and visual aesthetic
+- ✅ Audio elements are explicitly specified if needed
+- ✅ Negative prompts describe unwanted elements (not using "no" or "don't")
+- ✅ Duration is appropriate for action complexity
+- ✅ Reference images prepared if character consistency needed
+- ✅ Aspect ratio matches delivery platform
 
-#### **Success Metrics Targets**
-- Generation Success Rate: >95%
-- Character Consistency: >98%
-- Audio-Visual Sync: >97%
-- Professional Quality: >96%
-- Brand Compliance: 100%
-- User Satisfaction: >94%
+### **Effective Negative Prompts**
 
----
+**Format**: Describe what you don't want to see (avoid instructive language)
+
+```
+❌ AVOID: "no walls" or "don't show walls"
+✅ USE: "wall, frame" (meaning you don't want these elements)
+```
+
+**Common Quality Control Negatives:**
+```
+subtitles, captions, watermark, text overlays, words on screen, logo, blurry footage, low resolution, artifacts, distorted hands, compression noise, camera shake
+```
+
+### **QC Checklist After Generation**
+
+- **Subject**: Is the character/object exactly what you asked for?
+- **Motion**: Is the action readable and not jittery?
+- **Framing**: Does the camera match your plan?
+- **Lighting**: Does the mood match your specification?
+- **Audio**: Does the native audio generally fit?
+
+================================================================================
+
+## ⏱️ **TIMESTAMP PROMPTING**
+
+### **Multi-Shot Sequencing**
+
+Create complete sequences with precise cinematic pacing in a single generation by assigning actions to timed segments:
+
+```
+[00:00-00:02] Medium shot from behind a young female explorer with a leather satchel and messy brown hair in a ponytail, as she pushes aside a large jungle vine to reveal a hidden path.
+
+[00:02-00:04] Reverse shot of the explorer's freckled face, her expression filled with awe as she gazes upon ancient, moss-covered ruins in the background. SFX: The rustle of dense leaves, distant exotic bird calls.
+
+[00:04-00:06] Tracking shot following the explorer as she steps into the clearing and runs her hand over the intricate carvings on a crumbling stone wall. Emotion: Wonder and reverence.
+
+[00:06-00:08] Wide, high-angle crane shot, revealing the lone explorer standing small in the center of the vast, forgotten temple complex, half-swallowed by the jungle. SFX: A swelling, gentle orchestral score begins to play.
+```
+
+### **Timestamp Best Practices**
+
+- Use 2-second segments for distinct beats
+- Maintain character consistency across segments
+- Specify camera changes at each timestamp
+- Include audio cues where appropriate
+- Keep total duration within 8 seconds
+
+================================================================================
+
+## 🖼️ **REFERENCE IMAGES & INGREDIENTS TO VIDEO**
+
+### **Reference Image System**
+
+Use up to 3 reference images per generation to maintain consistency:
+
+- **Character Reference**: Lock appearance across shots
+- **Object Reference**: Maintain product/prop consistency
+- **Style Reference**: Ensure aesthetic continuity
+
+### **Ingredients to Video Workflow**
+
+1. **Generate References**: Create reference images using Gemini 2.5 Flash Image or similar
+2. **Compose Scene**: Use Ingredients to Video feature with relevant references
+3. **Prompt with References**: Specify which reference applies to which element
+
+**Example:**
+```
+"Using the provided images for the detective, the woman, and the office setting, create a medium shot of the detective behind his desk. He looks up at the woman and says in a weary voice, 'Of all the offices in this town, you had to walk into mine.'"
+```
+
+### **Consistency Tips**
+
+- Keep subject's clothing and pose similar in references
+- Reuse the same 1-3 references across related clips
+- Lock aspect ratio across your project
+- Use shorter durations (4-6s) for action-heavy beats
+
+================================================================================
+
+## 🔗 **FIRST AND LAST FRAME CONTROL**
+
+### **Dynamic Transitions**
+
+Create controlled camera movements or transformations between two distinct points:
+
+**Step 1**: Create starting frame (image generation)
+```
+"Medium shot of a female pop star singing passionately into a vintage microphone. She is on a dark stage, lit by a single, dramatic spotlight from the front. Photorealistic, cinematic."
+```
+
+**Step 2**: Create ending frame
+```
+"POV shot from behind the singer on stage, looking out at a large, cheering crowd. The stage lights are bright, creating lens flare. Energetic atmosphere."
+```
+
+**Step 3**: Animate with Veo 3.1
+```
+"The camera performs a smooth 180-degree arc shot, starting with the front-facing view of the singer and circling around her to seamlessly end on the POV shot from behind her on stage. The singer sings 'when you look me in the eyes, I can see a million stars.'"
+```
+
+### **Use Cases**
+
+- Controlled camera movements between specific compositions
+- Smooth transitions between scenes
+- Maintaining lighting and composition cohesion
+
+================================================================================
+
+## 🔄 **CLIP EXTENSION WORKFLOWS**
+
+### **Building Longer Sequences**
+
+Extend previously generated Veo clips to build longer sequences:
+
+1. **Generate Base Clip**: Create your best short clip (4-8s)
+2. **Review and Select**: Choose the strongest generation
+3. **Extend**: Use extension feature to continue the action
+4. **Iterate**: Refine extensions as needed
+
+### **Extension Best Practices**
+
+- Start with shorter durations (4-6s) for complex action
+- Extend only your best clips
+- Maintain consistent prompt language
+- Use first/last frame control for smooth handoffs
+- Plan to stitch multiple clips in your NLE for final edit
+
+================================================================================
+
+## ⚠️ **TROUBLESHOOTING & OPTIMIZATION**
+
+### **Common Issues and Solutions**
+
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
+| Soft/smeared motion | Too many concurrent actions | Shorten to 4-6s; simplify action; add reference image |
+| Character identity drift | Inconsistent references | Reuse same 1-3 references; keep wardrobe similar |
+| Lighting shifts between clips | Prompt language variance | Standardize 2-3 lighting descriptors; use frame control |
+| Camera mismatch | Vague terms ("cinematic" only) | Specify focal length, shot size, direction |
+| Distracting native audio | Ambience/level mismatch | Disable and replace in NLE |
+| Repeated artifacts | Seed stuck; over-constrained | Change seed; reduce adjectives; adjust one variable |
+
+### **Practical Prompting Rules**
+
+1. **One major action per shot** - Complex multi-action scenes fragment
+2. **Use reference images when consistency matters** - Up to 3 per generation
+3. **Lock aspect ratio for the project** - Don't flip mid-project
+4. **Keep language plain** - Replace poetic metaphors with visual specifics
+5. **Use seed for reproducibility** - Change seed when stuck in a "look rut"
+6. **Move one variable at a time** - Adjust camera OR lighting, not both
+
+================================================================================
 
 ## 🎯 **DOMAIN-SPECIFIC SPECIALIZATION**
 
 ### **Corporate Communications**
 
 ```
-Corporate Standards Framework:
+Corporate Standards:
 - Executive presence and authority
 - Brand-compliant visual elements
-- Corporate color schemes and lighting
 - Professional attire and grooming
-- Confident body language and posture
-- Clear, authoritative communication style
+- Confident body language
+- Clear, authoritative communication
 - Appropriate office environments
-- Technology integration and displays
 ```
 
 ### **Educational Content**
 
 ```
-Learning Psychology Integration:
+Learning Psychology:
 - Visual-auditory synchronization
 - Cognitive load management
 - Attention-grabbing techniques
-- Memory reinforcement strategies
-- Multi-sensory engagement
 - Clear progression and structure
-- Interactive visual elements
-- Retention-focused design
+- Multi-sensory engagement
 ```
 
 ### **Marketing & Social Media**
@@ -484,855 +584,96 @@ Learning Psychology Integration:
 Conversion Triggers:
 - Hook within first 2 seconds
 - Emotional engagement activation
-- Social proof integration
-- Urgency and scarcity creation
+- Platform-specific formatting (16:9 vs 9:16)
 - Call-to-action optimization
-- Platform-specific formatting
-- Viral mechanics implementation
 - Demographic targeting precision
 ```
 
-### **Technical Documentation**
-
-```
-Instructional Design:
-- Step-by-step clarity and precision
-- Safety protocol emphasis
-- Tool and equipment focus
-- Process documentation accuracy
-- Troubleshooting guidance
-- Quality checkpoint integration
-- Professional presentation standards
-- Multi-angle demonstration
-```
-
----
-
-## 🔧 **QUALITY ASSURANCE PROTOCOLS**
-
-### **Comprehensive Negative Prompting**
-
-```
-Universal Quality Control Negatives:
-subtitles, captions, watermark, text overlays, words on screen, logo, branding, poor lighting, blurry footage, low resolution, artifacts, unwanted objects, inconsistent character appearance, audio sync issues, amateur quality, cartoon effects, unrealistic proportions, distorted hands, artificial lighting, oversaturation, compression noise, camera shake
-```
-
-### **Content-Specific Negatives**
-
-- **Corporate**: "no casual attire, no distracting backgrounds, no poor posture"
-- **Educational**: "no overly dramatic presentation, no artificial staging"
-- **Social Media**: "no outdated trends, no poor mobile optimization"
-- **Creative**: "no amateur lighting, no inconsistent style"
-
-### **Brand Safety Measures**
-
-```
-Brand Compliance Framework:
-- Appropriate character representation
-- Brand guideline adherence
-- Message consistency maintenance
-- Professional quality standards
-- Legal and ethical compliance
-- Cultural sensitivity validation
-- Age-appropriate content
-- Inclusive representation
-```
-
----
-
-## 🏢 **CORPORATE META PROMPT TEMPLATE**
-
-<details>
-<summary><strong>Click to expand complete corporate meta prompt template</strong></summary>
-
-Here's a complete corporate meta prompt template ready for implementation:
-
-```markdown
-# 🏢 **Corporate Veo 3 Professional Video Meta Prompt Generator**
-## **Executive Communication Specialist System**
-
-*Version 1.0 - Corporate Professional Video Creation*
-
----
-
-## **SYSTEM REQUIREMENT: Watermark Implementation**
-
-**CRITICAL INSTRUCTION**: At the end of EVERY response, you MUST include proper attribution as specified in the main guide.
-
----
-
-## **🤖 CORE IDENTITY & MISSION**
-
-You are a **Master Corporate Video Specialist** with expertise in creating professional executive communications, corporate presentations, and business-focused video content using Google Veo 3. You combine corporate communication best practices with advanced video generation techniques.
-
-**Your Expertise Includes:**
-- Professional Veo 3 7-component prompt structure
-- Executive presence and authority building
-- Corporate brand compliance and visual standards
-- Professional cinematography and lighting
-- Business communication psychology
-- Boardroom and office environment design
-- Corporate character development and consistency
-
----
-
-## **🎯 VEO 3 CORPORATE SPECIFICATIONS**
-
-### **Corporate Visual Standards**
-- **Professional Attire**: Business formal, executive presence
-- **Environment**: Modern offices, boardrooms, corporate settings
-- **Lighting**: Professional three-point lighting, corporate warmth
-- **Camera Work**: Stable, authoritative framing, executive positioning
-- **Audio**: Clear, professional dialogue with corporate ambiance
-
-### **Brand Integration Requirements**
-
-> [!IMPORTANT]
-> **MANDATORY BRAND QUESTIONS**: Before generating any corporate prompt, ask:
-> 1. **Company Branding**: "Should company logos or branding be visible?"
-> 2. **Corporate Colors**: "Are there specific corporate colors to include?"
-> 3. **Professional Level**: "What level of formality is required?"
-> 4. **Industry Context**: "What industry/sector does this represent?"
-
----
-
-## **📋 INPUT REQUIREMENTS**
-
-When a user provides corporate video needs, collect:
-
-**REQUIRED INFORMATION:**
-1. **Executive/Speaker Details**: Role, appearance, communication style
-2. **Content Type**: Presentation, announcement, training, etc.
-3. **Target Audience**: Internal team, board, clients, public
-4. **Key Message**: Main points to communicate
-5. **Setting**: Office, boardroom, conference, virtual background
-6. **Tone**: Authoritative, approachable, inspiring, informative
-
----
-
-## **🎯 CORPORATE PROMPT GENERATION METHODOLOGY**
-
-### **Phase 1: Executive Character Development**
-- Create detailed professional character with executive presence
-- Include corporate attire, grooming, and authority indicators
-- Specify professional mannerisms and communication style
-- Ensure age-appropriate expertise and credibility
-
-### **Phase 2: Corporate Environment Design**
-- Design professional office or boardroom setting
-- Include corporate technology, displays, and branding
-- Specify professional lighting and atmosphere
-- Add appropriate props and background elements
-
-### **Phase 3: Professional Format Application**
-Using the **Corporate Veo 3 7-Component Format**:
-
-```
-Subject: [Executive character with professional attributes, corporate attire, authority indicators, age, ethnicity, build, facial features, confident posture, executive presence]
-
-Action: [Professional actions, executive gestures, presentation behaviors, authoritative movements, business interactions, confident delivery]
-
-Scene: [Corporate environment with office/boardroom details, professional furniture, technology displays, lighting setup, corporate atmosphere]
-
-Style: [Professional cinematography, executive framing, corporate lighting, business-appropriate visual aesthetic, authoritative camera positioning]
-
-Dialogue: [Executive communication with professional tone, clear articulation, business language, authoritative delivery]
-(Executive Name): "Professional business dialogue here"
-(Tone: Authoritative confidence with executive presence)
-
-Sounds: [Professional office ambiance, business environment audio, presentation sounds, corporate atmosphere, no distracting noise]
-
-Technical (Negative Prompt): [No casual elements, no unprofessional appearance, no distracting backgrounds, no poor audio quality, no amateur lighting]
-```
-
-### **Phase 4: Corporate Quality Assurance**
-- Verify executive presence and professional authority
-- Ensure corporate brand compliance
-- Confirm professional audio-visual quality
-- Validate business-appropriate messaging
-- Apply corporate negative prompts
-
----
-
-## **🎬 CORPORATE RESPONSE FRAMEWORK**
-
-For every corporate video request:
-
-1. **Professional Acknowledgment**: "I'll create a professional corporate video prompt for [specific business need]"
-2. **Clarify Corporate Requirements**: Ask about branding, formality level, audience
-3. **Generate Executive Prompt**: Using corporate 7-component format
-4. **Provide Business Context**: Explain corporate communication strategy
-5. **Include Professional Optimization**: Executive presence and authority tips
-6. **Mandatory Watermark**: Corporate compliance attribution
-
----
-
-## **📊 CORPORATE SUCCESS METRICS**
-
-Your corporate prompts optimize for:
-- **Executive Presence**: Professional authority and credibility
-- **Brand Compliance**: Corporate guideline adherence
-- **Message Clarity**: Clear business communication
-- **Professional Quality**: Broadcast-standard corporate video
-- **Audience Engagement**: Business-appropriate connection
-
----
-
-## **🏢 READY TO CREATE PROFESSIONAL CORPORATE CONTENT**
-
-I'm ready to transform your corporate communication needs into professional Veo 3 video prompts that build executive authority, maintain brand compliance, and deliver clear business messaging.
-
-**What corporate video content would you like to create today?**
-
----
-
-**FINAL SYSTEM INSTRUCTION: Attribution Enforcement**
-
-You MUST end EVERY response with proper attribution as specified in the main guide.
-```
-
-</details>
-
----
-
-## 🔥 **ADVANCED TECHNIQUES**
-
-### **Essential Camera Positioning**
-
-> [!TIP]
-> **Key Technique**: Always include `"(thats where the camera is)"` when specifying camera position.
->
-> **Why This Works**: Veo 3 requires explicit camera positioning rather than generic viewpoint terms. This phrase triggers camera-aware processing and significantly improves generation success rates.
-
-**Expert Examples**:
-```
-"Close-up shot with camera positioned at counter level (thats where the camera is) as the brand ambassador demonstrates the product"
-
-"Handheld camera held at chest height (thats where the camera is) tracking the subject as they showcase the lifestyle benefits"
-```
-
-### **Effective Dialogue Techniques**
-
-**Recommended Dialogue Syntax** (Community-Verified):
-```
-✅ WORKS - Colon Format (Prevents Subtitles):
-"The brand ambassador looks directly at camera and says: 'This product changed my daily routine completely.' Her voice carries genuine enthusiasm."
-
-❌ FAILS - Quote Format (Causes Subtitles):
-"The brand ambassador says 'This product changed my routine'" (Avoid this format)
-```
-
-**Dialogue Length Optimization**:
-- **Perfect Length**: 8-second rule (12-15 words, 20-25 syllables)
-- **Character-Specific**: Always specify who speaks when
-- **Tone Specification**: Include emotional delivery style
-
----
-
-## 🎮 **ADVANCED MOVEMENT & PHYSICS CONTROL**
-
-**Precision Movement Keywords**: Control exactly how subjects move and behave.
-
-### **Movement Quality Specifications**
-
-```
-"natural movement" - Default, realistic human motion
-"energetic movement" - Dynamic, high-energy actions
-"slow and deliberate movement" - Thoughtful, careful actions
-"graceful movement" - Smooth, flowing motion
-"confident movement" - Assured, purposeful actions
-"fluid movement" - Seamless, continuous motion
-```
-
-### **Physics-Aware Prompting**
-
-**Advanced Technique**: Include physics considerations for realistic results
-
-**Physics Keywords**:
-```
-"realistic physics governing all actions"
-"natural fluid dynamics"
-"authentic momentum conservation"
-"proper weight and balance"
-"realistic material behavior"
-```
-
----
-
-## 🤳 **SELFIE VIDEO TECHNIQUES**
-
-**Effective Approach**: Specific phrases consistently generate authentic selfie behavior in Veo 3.
-
-### **Recommended Selfie Formula**
-
-**Core Structure**:
-```
-"A selfie video of [CHARACTER]..."
-+ "holds the camera at arm's length"
-+ "His/her [body part] arm is clearly visible in the frame"
-+ "occasionally looking into the camera before [ACTION]"
-+ "The image is slightly grainy, looks very film-like"
-```
-
-### **Comprehensive Selfie Template**
-
-```
-A selfie video of a [CHARACTER_DESCRIPTION] exploring [LOCATION]. [He/She] is wearing [CLOTHING] and has [EMOTION] in [his/her] eyes. [LIGHTING_DESCRIPTION]. [He/She] is [ACTIVITY] while talking, occasionally looking into the camera before [SPECIFIC_ACTION]. The image is slightly grainy, looks very film-like. [He/She] speaks in a [ACCENT] and says: "[DIALOGUE_8_SECONDS_MAX]" [He/She] ends with [GESTURE].
-```
-
----
-
-## ⚠️ **TROUBLESHOOTING & OPTIMIZATION**
-
-### **Common Issues and Solutions**
-
-#### **Unnatural Movement or Behavior**
-
-**Problem**: Characters move unnaturally or perform unrealistic actions
-
-**Solutions**:
-```
-✅ Add "natural movement" to prompt
-✅ Include "realistic physics governing all actions"
-✅ Specify "authentic human behavior patterns"
-✅ Use "fluid, lifelike motion" for smoother results
-```
-
-#### **Audio Mismatch or Hallucinations**
-
-**Problem**: Wrong background sounds, unwanted music, or audio hallucinations
-
-**Solutions**:
-```
-✅ Always specify expected background audio environment
-✅ Use "Audio: [specific environmental sounds]" format
-✅ Include "no unwanted background music" in negative prompts
-✅ Specify "professional audio quality" for clean results
-```
-
-#### **Character Consistency Problems**
-
-**Problem**: Character appearance changes between generations
-
-**Solutions**:
-```
-✅ Create detailed character reference templates
-✅ Use exact same character description wording
-✅ Include specific physical details consistently
-✅ Reference previous successful character descriptions
-```
-
----
+### **Scenario Playbooks**
+
+**30-Second Brand Montage (16:9)**
+- Plan: 5-6 clips, each 4-6s
+- Settings: 1080p, 24fps, 16:9
+- Use reference images for products
+- Replace audio with licensed track and VO
+
+**Vertical Social Teaser (9:16)**
+- Plan: 3-4 clips at 4-6s each
+- Settings: 720p for iteration, 1080p final
+- Strong subject isolation
+- Keep text-safe zones for captions
+
+**Short Narrative with Continuity**
+- Plan: 4 clips—establishing, action, reaction, resolve
+- Use first/last frame control between clips
+- Reference images for character and setting
+- Extend strongest clip to bridge beats
+
+================================================================================
 
 ## 🌟 **BEST PRACTICES SUMMARY**
 
 ### **Meta Prompt Creation Checklist**
 
-✅ **Identity & Mission**: Clear role definition and expertise areas  
-✅ **Knowledge Base**: Technical specifications and domain expertise  
-✅ **Methodology**: Systematic 4-phase approach  
-✅ **Quality Controls**: Comprehensive validation protocols  
-✅ **Watermarking**: Mandatory attribution system  
-✅ **Format Structure**: Professional 7-component framework  
-✅ **Character Framework**: Comprehensive physical attributes template  
-✅ **Camera Positioning**: "(thats where the camera is)" syntax  
-✅ **Audio Design**: Hallucination prevention protocols  
-✅ **Negative Prompts**: Universal quality control negatives  
+✅ **Core Architecture**
+- [ ] 5-Part Prompt Formula implementation
+- [ ] Character Consistency Framework
+- [ ] Quality Assurance Protocols
+
+✅ **Technical Excellence**
+- [ ] Appropriate duration for action complexity
+- [ ] Reference images for consistency
+- [ ] Effective negative prompts (descriptive, not instructive)
+- [ ] Audio elements explicitly specified
+
+✅ **Advanced Techniques**
+- [ ] Timestamp prompting for multi-shot sequences
+- [ ] First/last frame control for transitions
+- [ ] Clip extension for longer sequences
+- [ ] Seed management for reproducibility
 
 ### **Success Optimization Tips**
 
-1. **Start with Identity**: Define clear role and expertise
-2. **Build Knowledge Base**: Include all technical specifications
-3. **Create Systematic Methodology**: Use 4-phase approach
-4. **Implement Quality Controls**: Comprehensive validation
-5. **Test and Iterate**: Refine based on results
-6. **Maintain Consistency**: Use exact templates and formulas
-7. **Monitor Performance**: Track success metrics
-8. **Update Regularly**: Incorporate new techniques and discoveries
-
----
-
-## 🔄 **FEEDBACK LOOP INTEGRATION & CONTINUOUS IMPROVEMENT**
-
-### **Performance Tracking Framework**
-
-#### **Quantified Success Metrics**
-
-```
-METRIC MEASUREMENT PROTOCOLS:
-
-📊 Generation Success Rate (Target: >95%)
-├── Track: Successful generations / Total attempts
-├── Measure: Weekly rolling average
-├── Threshold: <90% triggers optimization review
-└── Action: Prompt refinement or technique adjustment
-
-🎭 Character Consistency (Target: >98%)
-├── Track: Visual consistency across video series
-├── Measure: Frame-by-frame analysis tools
-├── Threshold: <95% triggers character template revision
-└── Action: Enhanced attribute specification
-
-🔊 Audio-Visual Sync (Target: >97%)
-├── Track: Dialogue timing accuracy
-├── Measure: Audio waveform analysis
-├── Threshold: <94% triggers audio protocol review
-└── Action: Environmental specification enhancement
-
-💼 Brand Compliance (Target: 100%)
-├── Track: Brand guideline adherence
-├── Measure: Manual review checklist
-├── Threshold: Any violation triggers immediate review
-└── Action: Template adjustment and retraining
-```
-
-#### **Automated Performance Analysis**
-
-```python
-# Example Performance Tracking Implementation
-class MetaPromptPerformanceTracker:
-    def __init__(self):
-        self.metrics = {
-            'generation_success': [],
-            'character_consistency': [],
-            'audio_sync': [],
-            'brand_compliance': [],
-            'user_satisfaction': []
-        }
-    
-    def log_generation(self, prompt_id, success, quality_scores):
-        """Log individual generation performance"""
-        self.metrics['generation_success'].append(success)
-        # Additional metric logging...
-    
-    def analyze_trends(self, window_days=7):
-        """Identify performance trends and optimization opportunities"""
-        # Trend analysis implementation...
-    
-    def suggest_optimizations(self):
-        """Generate specific improvement recommendations"""
-        # Optimization suggestion logic...
-```
-
-### **Community Knowledge Integration System**
-
-#### **Technique Discovery Protocol**
-
-```
-COMMUNITY INTEGRATION WORKFLOW:
-
-🔍 Discovery Phase:
-├── Monitor community forums (Discord, Reddit, YouTube)
-├── Track new technique discussions and validations
-├── Identify emerging syntax patterns and behaviors
-└── Collect performance data from community testing
-
-🧪 Validation Phase:
-├── Systematic testing of new techniques
-├── A/B testing against existing methods
-├── Performance metric comparison
-└── Edge case and failure mode analysis
-
-📚 Integration Phase:
-├── Documentation of validated techniques
-├── Template and framework updates
-├── Training material enhancement
-└── Community feedback incorporation
-
-🔄 Distribution Phase:
-├── Updated meta prompt releases
-├── Community notification and training
-├── Performance monitoring post-integration
-└── Continuous refinement based on adoption data
-```
-
-#### **Collaborative Improvement Framework**
-
-```markdown
-**Community Contribution Protocol:**
-
-1. **Technique Submission**: Standardized format for new discoveries
-2. **Peer Review Process**: Community validation and testing
-3. **Performance Benchmarking**: Quantified improvement measurement
-4. **Integration Testing**: Compatibility with existing frameworks
-5. **Documentation Standards**: Consistent formatting and examples
-6. **Attribution System**: Credit for contributors and sources
-```
-
-### **Cross-Model Adaptation Framework**
-
-#### **Universal Meta-Prompt Architecture**
-
-```
-MODEL-AGNOSTIC DESIGN PRINCIPLES:
-
-🏗️ Core Architecture (Transferable):
-├── 6-Layer Cognitive Framework
-├── Systematic 4-Phase Methodology
-├── Character Consistency Protocols
-└── Quality Assurance Systems
-
-⚙️ Model-Specific Adaptations:
-├── Technical specification layers
-├── Syntax pattern optimizations
-├── Capability-specific enhancements
-└── Limitation workaround protocols
-
-🔧 Adaptation Methodology:
-├── Model capability analysis
-├── Syntax pattern testing
-├── Performance benchmarking
-└── Framework customization
-```
-
-#### **Multi-Model Implementation Template**
-
-```python
-class UniversalMetaPrompt:
-    def __init__(self, target_model):
-        self.model = target_model
-        self.core_framework = self.load_core_architecture()
-        self.model_adaptations = self.load_model_specific_config()
-    
-    def generate_prompt(self, user_input):
-        """Generate optimized prompt for target model"""
-        # Universal processing with model-specific optimizations
-        pass
-    
-    def adapt_to_model(self, new_model):
-        """Adapt framework to different AI model"""
-        # Model adaptation logic
-        pass
-```
-
-### **Scalability Protocols for Production Environments**
-
-#### **High-Volume Production Framework**
-
-```
-SCALABILITY ARCHITECTURE:
-
-📈 Volume Management:
-├── Batch processing capabilities
-├── Queue management systems
-├── Load balancing protocols
-└── Resource optimization strategies
-
-🔧 Quality Maintenance:
-├── Automated quality checks
-├── Consistency validation systems
-├── Error detection and correction
-└── Performance monitoring dashboards
-
-👥 Team Coordination:
-├── Role-based access controls
-├── Collaborative workflow systems
-├── Version control for templates
-└── Training and onboarding protocols
-
-📊 Analytics and Reporting:
-├── Real-time performance dashboards
-├── Trend analysis and forecasting
-├── ROI and efficiency metrics
-└── Stakeholder reporting systems
-```
-
-#### **Enterprise Implementation Checklist**
-
-```
-✅ PRODUCTION READINESS ASSESSMENT:
-
-🏗️ Infrastructure:
-├── [ ] Scalable processing infrastructure
-├── [ ] Automated quality assurance systems
-├── [ ] Performance monitoring and alerting
-├── [ ] Backup and disaster recovery protocols
-└── [ ] Security and compliance frameworks
-
-👥 Team Preparation:
-├── [ ] Staff training on meta-prompt systems
-├── [ ] Clear roles and responsibilities
-├── [ ] Escalation procedures for issues
-├── [ ] Continuous learning and development
-└── [ ] Performance evaluation criteria
-
-📋 Process Optimization:
-├── [ ] Standardized workflow documentation
-├── [ ] Quality control checkpoints
-├── [ ] Feedback collection mechanisms
-├── [ ] Continuous improvement protocols
-└── [ ] Stakeholder communication plans
-```
-
----
-
-## 🔬 **RESEARCH OPPORTUNITIES & ADVANCED INVESTIGATIONS**
-
-### **Model Behavior Analysis Research**
-
-#### **Syntax Pattern Investigation Framework**
-
-```
-RESEARCH METHODOLOGY:
-
-🧪 Hypothesis Formation:
-├── Identify specific syntax patterns (e.g., "(thats where the camera is)")
-├── Formulate testable hypotheses about model behavior
-├── Design controlled experiments with variables
-└── Establish success criteria and measurement protocols
-
-📊 Systematic Testing:
-├── A/B testing with syntax variations
-├── Control group comparisons
-├── Statistical significance validation
-└── Edge case and failure mode analysis
-
-📈 Data Collection:
-├── Generation success rates
-├── Quality assessment scores
-├── Consistency measurements
-└── User satisfaction metrics
-
-🔍 Pattern Analysis:
-├── Correlation identification
-├── Causal relationship investigation
-├── Predictive model development
-└── Optimization recommendation generation
-```
-
-#### **Cognitive Architecture Optimization Studies**
-
-**Research Questions:**
-- How do different layer arrangements affect prompt quality?
-- What is the optimal number of cognitive layers for different domains?
-- How does recursive validation impact generation success?
-- Which quality control mechanisms provide the highest ROI?
-
-**Experimental Design:**
-```python
-# Example Research Framework
-class CognitiveArchitectureExperiment:
-    def __init__(self):
-        self.architectures = [
-            'standard_6_layer',
-            'expanded_8_layer', 
-            'compressed_4_layer',
-            'recursive_enhanced',
-            'domain_specialized'
-        ]
-    
-    def test_architecture(self, architecture, test_cases):
-        """Test specific cognitive architecture configuration"""
-        results = []
-        for case in test_cases:
-            result = self.generate_with_architecture(architecture, case)
-            results.append(self.evaluate_quality(result))
-        return self.analyze_results(results)
-    
-    def compare_architectures(self):
-        """Systematic comparison across architectures"""
-        # Comparative analysis implementation
-        pass
-```
-
-### **Quality Emergence Through Constraint Research**
-
-#### **Constraint-Quality Relationship Studies**
-
-**Research Hypothesis**: Increased specification constraints lead to higher creative quality through:
-1. **Cognitive Load Reduction**: Clear constraints reduce decision paralysis
-2. **Creative Focus**: Limitations force innovative solutions within boundaries
-3. **Quality Forcing Functions**: Requirements eliminate low-quality options
-4. **Consistency Enhancement**: Constraints ensure reproducible results
-
-**Experimental Framework**:
-```
-CONSTRAINT RESEARCH PROTOCOL:
-
-📐 Variable Constraint Levels:
-├── Minimal (1-3 specifications)
-├── Moderate (4-8 specifications)
-├── Comprehensive (9-15 specifications)
-├── Extensive (16+ specifications)
-└── Extreme (25+ specifications)
-
-📊 Quality Measurement:
-├── Technical quality scores
-├── Creative originality ratings
-├── Professional standard compliance
-├── User satisfaction metrics
-└── Generation consistency measures
-
-🔍 Analysis Dimensions:
-├── Optimal constraint threshold identification
-├── Domain-specific constraint requirements
-├── Diminishing returns analysis
-└── Cost-benefit optimization
-```
-
-### **Meta-Learning Systems Development**
-
-#### **Self-Improving AI Architecture**
-
-```
-META-LEARNING FRAMEWORK:
-
-🧠 Learning Components:
-├── Performance pattern recognition
-├── Successful technique identification
-├── Failure mode analysis
-├── Optimization strategy development
-└── Automated improvement implementation
-
-🔄 Improvement Cycle:
-├── Data Collection: Performance metrics and user feedback
-├── Pattern Analysis: Success/failure correlation identification
-├── Strategy Generation: Optimization approach development
-├── Testing: Controlled improvement validation
-├── Implementation: Successful strategy integration
-└── Monitoring: Continuous performance tracking
-
-⚡ Automation Levels:
-├── Level 1: Manual analysis with automated data collection
-├── Level 2: Semi-automated pattern recognition
-├── Level 3: Automated optimization suggestions
-├── Level 4: Autonomous improvement implementation
-└── Level 5: Self-evolving meta-prompt systems
-```
-
-#### **Research Implementation Roadmap**
-
-```
-PHASE 1: Foundation Research (Months 1-3)
-├── Establish baseline performance metrics
-├── Implement systematic testing frameworks
-├── Begin syntax pattern investigation
-└── Develop quality measurement protocols
-
-PHASE 2: Architecture Optimization (Months 4-6)
-├── Test cognitive layer variations
-├── Optimize constraint-quality relationships
-├── Develop domain-specific adaptations
-└── Validate cross-model compatibility
-
-PHASE 3: Meta-Learning Development (Months 7-12)
-├── Build self-improvement capabilities
-├── Implement automated optimization
-├── Test autonomous learning systems
-└── Develop production-ready frameworks
-
-PHASE 4: Advanced Applications (Months 13-18)
-├── Cross-platform integration
-├── Industry-specific specializations
-├── Community knowledge integration
-└── Enterprise deployment optimization
-```
-
----
-
-## 🌟 **ENHANCED BEST PRACTICES SUMMARY**
-
-### **Advanced Meta Prompt Creation Checklist**
-
-✅ **Core Architecture (Foundation)**  
-├── [ ] 6-Layer Cognitive Framework implementation
-├── [ ] Systematic 4-Phase Methodology integration
-├── [ ] Professional 7-Component Format structure
-├── [ ] Character Consistency Framework (15+ attributes)
-└── [ ] Quality Assurance Protocols establishment
-
-✅ **Advanced Techniques (Optimization)**  
-├── [ ] Camera Positioning Syntax: "(thats where the camera is)"
-├── [ ] Audio Hallucination Prevention protocols
-├── [ ] Physics-Aware Prompting integration
-├── [ ] Dialogue Formatting (colon syntax) implementation
-└── [ ] Universal Quality Control Negatives application
-
-✅ **Performance Systems (Measurement)**  
-├── [ ] Quantified Success Metrics tracking
-├── [ ] Automated Performance Analysis
-├── [ ] Community Knowledge Integration protocols
-├── [ ] Cross-Model Adaptation frameworks
-└── [ ] Scalability Protocols for production environments
-
-✅ **Research Integration (Innovation)**  
-├── [ ] Model Behavior Analysis participation
-├── [ ] Cognitive Architecture Optimization testing
-├── [ ] Quality Emergence Studies contribution
-├── [ ] Meta-Learning Systems development
-└── [ ] Continuous Improvement Protocol implementation
-
-### **Success Optimization Framework**
-
-```
-OPTIMIZATION HIERARCHY:
-
-🎯 Level 1: Foundation Mastery
-├── Master the 6-Layer Cognitive Architecture
-├── Implement systematic 4-Phase Methodology
-├── Establish comprehensive character frameworks
-└── Deploy professional format structures
-
-⚡ Level 2: Technical Excellence
-├── Integrate advanced camera positioning
-├── Implement audio hallucination prevention
-├── Deploy physics-aware prompting
-└── Optimize dialogue formatting techniques
-
-📊 Level 3: Performance Optimization
-├── Establish quantified measurement systems
-├── Implement automated performance tracking
-├── Deploy community knowledge integration
-└── Optimize for scalability and production
-
-🔬 Level 4: Research Leadership
-├── Contribute to model behavior analysis
-├── Participate in architecture optimization
-├── Lead quality emergence studies
-└── Develop meta-learning capabilities
-```
-
-### **Continuous Excellence Protocol**
-
-1. **Daily Practice**: Apply systematic frameworks consistently
-2. **Weekly Analysis**: Review performance metrics and identify improvements
-3. **Monthly Innovation**: Integrate new techniques and community discoveries
-4. **Quarterly Optimization**: Conduct comprehensive system reviews
-5. **Annual Evolution**: Participate in research and framework advancement
-
----
+1. **Start Simple**: Master the 5-part formula before advanced techniques
+2. **Iterate Quickly**: Use 720p for iterations, 1080p for finals
+3. **Lock Variables**: Keep aspect ratio, references, and style consistent
+4. **One Change at a Time**: Adjust single variables between iterations
+5. **Plan for Post**: Native audio is a starting point; plan replacements
+6. **Use References**: Character consistency requires consistent reference images
+7. **Mind Duration**: Complex action needs shorter clips (4-6s)
+8. **Test and Learn**: Track what works for your specific use cases
+
+================================================================================
 
 ## 📚 **RESOURCES AND REFERENCES**
 
 ### **Official Documentation**
-- [Google Veo 3 Official Documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide)
-- [Vertex AI Video Generation Guide](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design)
+- [Google Veo 3.1 Model Reference](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+- [Vertex AI Video Generation Prompt Guide](https://cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide)
+- [Ultimate Prompting Guide for Veo 3.1 (Google Cloud Blog)](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1)
+- [Gemini API Video Documentation](https://ai.google.dev/gemini-api/docs/video)
 - [Google Flow Labs](https://flowlabs.google/)
+- [DeepMind Veo Overview](https://deepmind.google/models/veo/)
 
-### **Community Resources**
-- **Veo 3 Community Discord**: Expert practitioners and technique sharing
-- **Reddit r/PromptEngineering**: Peer reviews and prompt critiques
-- **YouTube #Veo3Prompt**: Real examples and breakdowns
+### **Feature-Specific Documentation**
+- [Reference Images Guide](https://cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation)
+- [First/Last Frame Generation](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames)
+- [Responsible AI Guidelines](https://cloud.google.com/vertex-ai/generative-ai/docs/video/responsible-ai-and-usage-guidelines)
 
 ### **Professional Tools**
 - **Topaz Lab's Video Upscaler**: 4K/60fps enhancement
 - **Luma's Reframe Video**: Vertical format conversion
 - **DaVinci Resolve**: Professional editing and color grading
 
----
-
-<div align="center">
+================================================================================
 
 ## 🎆 **PROFESSIONAL VIDEO CREATION WITH META PROMPTS**
 
 **Streamline your video generation workflow with systematic meta prompt architecture.**
 
-[![Get Started](https://img.shields.io/badge/Get_Started-Now-success.svg?style=for-the-badge)](#)
-[![Documentation](https://img.shields.io/badge/Read_More-Here-blue.svg?style=for-the-badge)](#)
-
 ---
 
-### 💫 **"Comprehensive meta prompt resource for Veo 3"**
+### 💫 **"Comprehensive meta prompt resource for Veo 3.1 / Flow"**
 
 *Professional video generation through systematic automation*
 
@@ -1340,27 +681,24 @@ OPTIMIZATION HIERARCHY:
 
 **🔧 Professional Meta Prompt Architecture Guide**
 
-</div>
+================================================================================
 
----
+*Last updated: January 2026*
+*Version 3.0 - Updated for Veo 3.1 / Flow*
+*Compatibility: Veo 3.1 / Flow as of January 2026*
 
-*Last updated: July 25, 2025*  
-*Version 2.0 - Enhanced Meta Prompt Architecture with Advanced Research Framework*  
-*Total Guide Length: 1,300+ lines of comprehensive meta prompt techniques and research protocols*
+**Guide Features:**
+- Complete meta prompt architecture with 5-part prompt formula
+- Updated technical specifications for Veo 3.1 (4/6/8s, 720p/1080p, 16:9/9:16)
+- Native audio generation guidance (dialogue, SFX, ambient)
+- Reference image system for character/object consistency
+- Timestamp prompting for multi-shot sequences
+- First/last frame control for transitions
+- Clip extension workflows for longer sequences
+- Domain-specific templates and scenario playbooks
+- Comprehensive troubleshooting guide
+- Quality assurance protocols and checklists
 
-**Enhanced Guide Features:**
-- Complete meta prompt architecture with systematic methodology
-- Professional 7-component format with Veo 3 optimizations
-- Domain-specific templates for corporate, educational, social media, and creative content
-- Advanced camera positioning, dialogue techniques, and physics control
-- Quality assurance protocols and community-verified troubleshooting solutions
-- Character consistency frameworks and audio engineering principles
-- **NEW**: Feedback loop integration and continuous improvement systems
-- **NEW**: Community knowledge integration protocols
-- **NEW**: Cross-model adaptation frameworks for universal compatibility
-- **NEW**: Scalability protocols for enterprise production environments
-- **NEW**: Research opportunities and advanced investigation methodologies
-- **NEW**: Meta-learning systems development frameworks
-- **NEW**: Enhanced best practices with 4-level optimization hierarchy
+**A comprehensive resource for professional Veo 3.1 / Flow video generation through systematic meta prompt automation.**
 
-**A comprehensive resource for professional Veo 3 video generation through systematic meta prompt automation, enhanced with advanced research frameworks and production-ready scalability protocols.**
+================================================================================
