@@ -1,0 +1,120 @@
+name: Build and Assemble Video (robust)
+
+on:
+  push:
+    paths:
+      - 'prompts/video-package/assets/**'
+      - '.github/workflows/build_video.yml'
+
+jobs:
+  build_video:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Prepare folders
+        run: |
+          mkdir -p prompts/video-package/outputs
+          mkdir -p /tmp/reencoded_videos
+          mkdir -p /tmp/reencoded_audio
+
+      - name: Re-encode input videos to uniform settings
+        run: |
+          set -e
+          for i in 1 2 3 4 5 6 7 8; do
+            IN="prompts/video-package/assets/scene$(printf "%02d" "$i").mp4"
+            OUT="/tmp/reencoded_videos/scene$(printf "%02d" "$i").mp4"
+            if [ -f "$IN" ]; then
+              echo "Re-encoding $IN -> $OUT"
+              ffmpeg -y -i "$IN" -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -r 24 \
+                -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:a aac -b:a 192k "$OUT"
+            else
+              echo "Warning: $IN not found, skipping"
+            fi
+          done
+
+      - name: Create video list for concat
+        run: |
+          rm -f /tmp/videos.txt
+          for f in /tmp/reencoded_videos/scene*.mp4; do
+            [ -f "$f" ] || continue
+            echo "file '$f'" >> /tmp/videos.txt
+          done
+          cat /tmp/videos.txt || true
+
+      - name: Concatenate videos (demuxer)
+        run: |
+          if [ -s /tmp/videos.txt ]; then
+            ffmpeg -f concat -safe 0 -i /tmp/videos.txt -c copy prompts/video-package/outputs/combined_video.mp4
+          else
+            echo "No videos to concatenate"; exit 1
+          fi
+
+      - name: Re-encode audio to uniform WAV 48k
+        run: |
+          for i in 1 2 3 4 5 6 7 8; do
+            IN="prompts/video-package/assets/audio/scene$(printf "%02d" "$i")_vo.wav"
+            OUT="/tmp/reencoded_audio/scene$(printf "%02d" "$i")_vo.wav"
+            if [ -f "$IN" ]; then
+              echo "Re-encoding audio $IN -> $OUT"
+              ffmpeg -y -i "$IN" -ar 48000 -ac 2 -sample_fmt s32 "$OUT"
+            else
+              echo "Warning: $IN not found, skipping"
+            fi
+          done
+
+      - name: Create audio list for concat
+        run: |
+          rm -f /tmp/audios.txt
+          for f in /tmp/reencoded_audio/scene*_vo.wav; do
+            [ -f "$f" ] || continue
+            echo "file '$f'" >> /tmp/audios.txt
+          done
+          cat /tmp/audios.txt || true
+
+      - name: Concatenate audios (demuxer)
+        run: |
+          if [ -s /tmp/audios.txt ]; then
+            ffmpeg -f concat -safe 0 -i /tmp/audios.txt -c copy prompts/video-package/outputs/combined_audio.wav
+          else
+            echo "No audio files to concatenate"; exit 1
+          fi
+
+      - name: Mux combined audio into combined video -> H.264 web deliverable
+        run: |
+          ffmpeg -y -i prompts/video-package/outputs/combined_video.mp4 \
+                 -i prompts/video-package/outputs/combined_audio.wav \
+                 -c:v libx264 -preset medium -crf 18 \
+                 -c:a aac -b:a 192k -shortest \
+                 prompts/video-package/outputs/final_h264.mp4
+
+      - name: Create ProRes master (ProRes 422 HQ)
+        run: |
+          ffmpeg -y -i prompts/video-package/outputs/combined_video.mp4 \
+                 -i prompts/video-package/outputs/combined_audio.wav \
+                 -c:v prores_ks -profile:v 3 \
+                 -c:a pcm_s16le -ar 48000 -ac 2 \
+                 prompts/video-package/outputs/final_prores.mov
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: final_videos
+          path: prompts/video-package/outputs/*
+
+      - name: Commit outputs back to repo (best-effort, may fail on large files)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add prompts/video-package/outputs/* || true
+          git commit -m "Add generated final videos" || echo "No changes to commit"
+          git push origin HEAD:${{ github.ref_name }} || echo "Push failed (likely large files); check workflow artifacts"
